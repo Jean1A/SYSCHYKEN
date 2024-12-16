@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Arial', sans-serif;
+}
+body{
+    background-color: #420b04;
+}
+
+/* Parte superior con título */
+.header {
+    background-color: #420b04; /* Color marrón oscuro */
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-left: 10px;
+    padding-bottom: 0cm;
+}
+.user-options{
+    padding-left: 30px;
+}
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black; /* Color negro */
+    padding: 20px 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+text-decoration: none;
+color: #ffffff;
+font-size: 16px;
+}
+
+/* Sección de fondo */
+.hero {
+    position: relative;
+    background: url('https://st2.depositphotos.com/2632165/10602/i/450/depositphotos_106028148-stock-photo-roast-chickens-and-various-vegetables.jpg') no-repeat center center/cover; /* Reemplaza con la imagen correcta */
+    height: calc(100vh - 92px); /* Altura restante después de la parte superior y barra */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Oscurece el fondo */
+}
+
+.hero-text {
+    position: relative;
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+.menu {
+    background-color: #4B0900;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.categories button {
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.categories button:hover {
+    background-color: #E64A19;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: white;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card .details {
+    padding: 15px;
+}
+
+.card .details h3 {
+    font-size: 20px;
+    color: #4B0900;
+    margin: 10px 0;
+}
+
+.card .details p {
+    font-size: 14px;
+    color: #555;
+}
+
+.card .details .price {
+    font-size: 18px;
+    color: #E64A19;
+    font-weight: bold;
+}
+
+.card .details button {
+    margin-top: 10px;
+    background-color: #FF5722;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.card .details button:hover {
+    background-color: #E64A19;
+}
+footer {
+    background-color: #383838;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.alert {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    margin: 10px 0;
+    border-radius: 5px;
+}
